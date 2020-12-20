@@ -17,6 +17,7 @@
     <properties>
         <java.version>11</java.version>
         <kotlin.version>1.4.21</kotlin.version>
+        <mockserver.version>5.11.2</mockserver.version>
     </properties>
 
     <dependencies>
@@ -40,6 +41,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mock-server</groupId>
+            <artifactId>mockserver-netty</artifactId>
+            <version>${mockserver.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
